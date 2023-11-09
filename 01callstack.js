@@ -1,7 +1,7 @@
-logger();
+hello();
 console.log(1);
 
-function logger() {
-  console.log(2);
-  console.log(3);
+function hello() {
+  console.log("hi");
+  console.log("good morning");
 }

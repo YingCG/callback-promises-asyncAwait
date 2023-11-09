@@ -8,6 +8,10 @@ const setThree = new Promise((resolve, reject) => {
   resolve("Set 3 Downloaded");
 });
 
-Promise.all([setOne, setTwo, setThree]).then((messages) => {
+// Promise.all to run all, promise.race to run as soon as one ready instead of wait for all
+// Promise.all([setOne, setTwo, setThree]).then((messages) => {
+//   console.log(messages);
+// });
+Promise.race([setOne, setTwo, setThree]).then((messages) => {
   console.log(messages);
 });

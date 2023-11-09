@@ -10,6 +10,7 @@ promise
     fetch("https://jsonplaceholder.typicode.com/users").then((users) => {
       return users.json();
     });
+    console.log(users);
   })
 
   .catch((err) => {

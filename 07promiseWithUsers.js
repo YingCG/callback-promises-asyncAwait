@@ -20,7 +20,9 @@ function getData(users) {
       // If the user is an admin
       resolve("Top secret here!");
     } else {
+      // const oneUser = users.some((one) => one.name === user);
       const oneUser = users.find((one) => one.name === user);
+      // const oneUser = users.filter((one) => one.name === user).legth>0;
       if (oneUser) {
         // If the user is in the users array
         resolve(oneUser);
